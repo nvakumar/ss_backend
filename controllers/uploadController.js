@@ -17,7 +17,7 @@ exports.uploadFile = async (req, res) => {
     const newUpload = new Upload({
       user: userId,
       type,
-      url: file?.path || file?.secure_url || 'N/A', // Cloudinary path fallback
+      url: file?.path || file?.secure_url || 'N/A', // Cloudinary fallback
       title,
       description,
     });
