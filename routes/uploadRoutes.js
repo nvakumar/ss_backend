@@ -18,3 +18,4 @@ router.get('/mine', authMiddleware, getMyUploads);
 router.patch('/:id/toggle', authMiddleware, toggleVisibility);
 
 module.exports = router;
+
